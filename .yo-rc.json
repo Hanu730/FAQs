@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.4",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "fa-qs",
+    "libraryId": "e7510765-0cb5-4290-a1c7-7d96d849a51d",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "fa-qs",
+    "solutionShortDescription": "fa-qs description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
