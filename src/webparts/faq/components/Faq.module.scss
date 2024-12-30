@@ -1,56 +1,73 @@
 @import '~@fluentui/react/dist/sass/References.scss';
 
 .faqContainer {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   padding: 20px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  //font-family: 'Segoe UI', Arial, sans-serif;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.questionText {
+  flex-grow: 1;  // Ensure the question text takes up available space
+}
 .faqTitle {
-  margin-bottom: 20px;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faqTitleIcon {
+  font-size: 24px;
+  color: #f4c542; /* Yellow icon color */
 }
 
 .faqItem {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
 
 .faqQuestion {
+  font-size: 18px;
   font-weight: bold;
-  font-size: 16px;
   cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ /* Light gray background for the question section */
+  border-radius: 5px;
 }
 
+.header {
+  background-color: #f26724;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+}
 .faqAnswer {
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 16px;
   color: #555;
-  margin-top: 5px;
+  line-height: 1.5;
+  padding: 10px;
+ // background-color: #f9f9f9; /* Light background for the answer section */
+  border-radius: 5px;
+}
+
+.iconButton {
+  font-size: 18px;
+  cursor: pointer;
+  color: #0078d4; /* Microsoft blue */
+  padding-left: 10px; /* Space between the question and the icon */
 }
 
 .contactButton {
   margin-top: 20px;
-}
-
-
-.faq {
-  overflow: hidden;
-  padding: 1em;
-  color: "[theme:bodyText, default: #323130]";
-  color: var(--bodyText);
-  &.teams {
-    font-family: $ms-font-family-fallbacks;
-  }
 }
 
 .welcome {
@@ -65,13 +82,139 @@
 .links {
   a {
     text-decoration: none;
-    color: "[theme:link, default:#03787c]";
     color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
 
     &:hover {
       text-decoration: underline;
-      color: "[theme:linkHovered, default: #014446]";
       color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
     }
   }
 }
+
+
+
+// @import '~@fluentui/react/dist/sass/References.scss';
+
+// .faqContainer {
+//   max-width: 600px;
+//   margin: auto;
+//   padding: 20px;
+//   border-radius: 8px;
+//   background-color: #f9f9f9;
+//   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+// }
+
+// .faqTitle {
+//   margin-bottom: 20px;
+//   font-size: 20px;
+//   font-weight: bold;
+// }
+
+// .faqItem {
+//   margin-bottom: 10px;
+//   padding: 10px;
+//   border-radius: 5px;
+//   background-color: #ffffff;
+//   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+// }
+
+// .faqQuestion {
+//   font-weight: bold;
+//   font-size: 16px;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .faqAnswer {
+//   font-size: 14px;
+//   color: #555;
+//   margin-top: 5px;
+// }
+
+// .contactButton {
+//   margin-top: 20px;
+// }
+
+
+// .faq {
+//   overflow: hidden;
+//   padding: 1em;
+//   color: "[theme:bodyText, default: #323130]";
+//   color: var(--bodyText);
+//   &.teams {
+//     font-family: $ms-font-family-fallbacks;
+//   }
+// }
+
+// .welcome {
+//   text-align: center;
+// }
+
+// .welcomeImage {
+//   width: 100%;
+//   max-width: 420px;
+// }
+
+// .links {
+//   a {
+//     text-decoration: none;
+//     color: "[theme:link, default:#03787c]";
+//     color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+//     &:hover {
+//       text-decoration: underline;
+//       color: "[theme:linkHovered, default: #014446]";
+//       color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+//     }
+//   }
+// }
+
+// .faqContainer {
+//   max-width: 800px;
+//   margin: auto;
+//   padding: 20px;
+//   font-family: 'Segoe UI', Arial, sans-serif;
+// }
+
+// .faqTitle {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   font-size: 24px;
+//   font-weight: bold;
+//   margin-bottom: 20px;
+// }
+
+// .faqTitleIcon {
+//   font-size: 24px;
+//   color: #f4c542; /* Yellow icon color */
+// }
+
+// .faqItem {
+//   border-bottom: 1px solid #ddd;
+//   padding: 10px 0;
+// }
+
+// .faqQuestion {
+//   font-size: 18px;
+//   font-weight: bold;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .faqAnswer {
+//   margin-top: 10px;
+//   font-size: 16px;
+//   color: #555;
+//   line-height: 1.5;
+// }
+
+// .iconButton {
+//   font-size: 18px;
+//   cursor: pointer;
+//   color: #0078d4; /* Microsoft blue */
+// }
